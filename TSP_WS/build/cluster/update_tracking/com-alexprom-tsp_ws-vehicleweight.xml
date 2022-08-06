@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="com.alexprom.tsp_ws.vehicleweight">
+    <module_version install_time="1659717108225" last="true" origin="installer" specification_version="1.0">
+        <file crc="1831072339" name="config/Modules/com-alexprom-tsp_ws-vehicleweight.xml"/>
+        <file crc="2112655249" name="modules/com-alexprom-tsp_ws-vehicleweight.jar"/>
+    </module_version>
+</module>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="com.alexprom.tsp_ws.env">
+    <module_version install_time="1659717107976" last="true" origin="installer" specification_version="1.0">
+        <file crc="2105318041" name="config/Modules/com-alexprom-tsp_ws-env.xml"/>
+        <file crc="2237227401" name="modules/com-alexprom-tsp_ws-env.jar"/>
+    </module_version>
+</module>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="com.alexprom.tsp_ws.eclipselink">
+    <module_version install_time="1659717106951" last="true" origin="installer" specification_version="1.0">
+        <file crc="56790687" name="config/Modules/com-alexprom-tsp_ws-eclipselink.xml"/>
+        <file crc="3260530143" name="modules/com-alexprom-tsp_ws-eclipselink.jar"/>
+        <file crc="3552562718" name="modules/ext/eclipselink.jar"/>
+        <file crc="3720097765" name="modules/ext/javax.persistence_2.1.0.v201304241213.jar"/>
+        <file crc="3119286176" name="modules/ext/org.eclipse.persistence.jpa.jpql_2.5.2.v20140319-9ad6abd.jar"/>
+    </module_version>
+</module>
