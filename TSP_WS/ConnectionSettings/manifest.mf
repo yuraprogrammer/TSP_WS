@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+AutoUpdate-Show-In-Client: true
+OpenIDE-Module: com.alexprom.tsp_ws.connectionsettings
+OpenIDE-Module-Install: com/alexprom/tsp_ws/connectionsettings/Installer.class
+OpenIDE-Module-Localizing-Bundle: com/alexprom/tsp_ws/connectionsettings/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+
