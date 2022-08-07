@@ -15,35 +15,35 @@ import org.openide.util.NbBundle.Messages;
  * Top component which displays something.
  */
 @ConvertAsProperties(
-        dtd = "-//com.alexprom.tsp_ws.weighting//wightingLogger//EN",
+        dtd = "-//com.alexprom.tsp_ws.weighting//weightingAdditional//EN",
         autostore = false
 )
 @TopComponent.Description(
-        preferredID = "wightingLoggerTopComponent",
+        preferredID = "weightingAdditionalTopComponent",
         //iconBase="SET/PATH/TO/ICON/HERE", 
         persistenceType = TopComponent.PERSISTENCE_ALWAYS
 )
-@TopComponent.Registration(mode = "output", openAtStartup = false)
-@ActionID(category = "Window", id = "com.alexprom.tsp_ws.weighting.wightingLoggerTopComponent")
+@TopComponent.Registration(mode = "output", openAtStartup = true)
+@ActionID(category = "Window", id = "com.alexprom.tsp_ws.weighting.weightingAdditionalTopComponent")
 @ActionReference(path = "Menu/Window" /*, position = 333 */)
 @TopComponent.OpenActionRegistration(
-        displayName = "#CTL_wightingLoggerAction",
-        preferredID = "wightingLoggerTopComponent"
+        displayName = "#CTL_weightingAdditionalAction",
+        preferredID = "weightingAdditionalTopComponent"
 )
 @Messages({
-    "CTL_wightingLoggerAction=Журнал работы с весами",
-    "CTL_wightingLoggerTopComponent=Журнал работы с весами",
-    "HINT_wightingLoggerTopComponent=Окно журнала работы с весами"
+    "CTL_weightingAdditionalAction=Додаткова інформація",
+    "CTL_weightingAdditionalTopComponent=Додаткова інформація",
+    "HINT_weightingAdditionalTopComponent=This is a weightingAdditional window"
 })
-public final class wightingLoggerTopComponent extends TopComponent {
+public final class weightingAdditionalTopComponent extends TopComponent {
 
-    public wightingLoggerTopComponent() {
+    public weightingAdditionalTopComponent() {
         initComponents();
-        setName(Bundle.CTL_wightingLoggerTopComponent());
-        setToolTipText(Bundle.HINT_wightingLoggerTopComponent());
+        setName(Bundle.CTL_weightingAdditionalTopComponent());
+        setToolTipText(Bundle.HINT_weightingAdditionalTopComponent());
         putClientProperty(TopComponent.PROP_DRAGGING_DISABLED, Boolean.TRUE);
-        putClientProperty(TopComponent.PROP_MAXIMIZATION_DISABLED, Boolean.TRUE);
         putClientProperty(TopComponent.PROP_UNDOCKING_DISABLED, Boolean.TRUE);
+        putClientProperty(TopComponent.PROP_KEEP_PREFERRED_SIZE_WHEN_SLIDED_IN, Boolean.TRUE);
 
     }
 
@@ -56,27 +56,25 @@ public final class wightingLoggerTopComponent extends TopComponent {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        jTextPane1 = new javax.swing.JTextPane();
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        jScrollPane1.setViewportView(jTextPane1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 544, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
     }// </editor-fold>//GEN-END:initComponents
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextPane jTextPane1;
     // End of variables declaration//GEN-END:variables
     @Override
     public void componentOpened() {

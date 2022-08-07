@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.alexprom.tsp_ws.connectionsettings;
+package com.alexprom.tsp_ws.weighting;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
@@ -15,14 +15,14 @@ import org.openide.util.Lookup;
 
 @OptionsPanelController.SubRegistration(
         location = "TSP_Settings",
-        displayName = "#AdvancedOption_DisplayName_dbConnectionSettings",
-        keywords = "#AdvancedOption_Keywords_dbConnectionSettings",
-        keywordsCategory = "TSP_Settings/dbConnectionSettings"
+        displayName = "#AdvancedOption_DisplayName_serialPortSettings",
+        keywords = "#AdvancedOption_Keywords_serialPortSettings",
+        keywordsCategory = "TSP_Settings/serialPortSettings"
 )
-@org.openide.util.NbBundle.Messages({"AdvancedOption_DisplayName_dbConnectionSettings=БД", "AdvancedOption_Keywords_dbConnectionSettings=Налаштування зв'язку з БД"})
-public final class dbConnectionSettingsOptionsPanelController extends OptionsPanelController {
+@org.openide.util.NbBundle.Messages({"AdvancedOption_DisplayName_serialPortSettings=Зв'зок з вагами", "AdvancedOption_Keywords_serialPortSettings=Налаштування RS232"})
+public final class serialPortSettingsOptionsPanelController extends OptionsPanelController {
 
-    private dbConnectionSettingsPanel panel;
+    private serialPortSettingsPanel panel;
     private final PropertyChangeSupport pcs = new PropertyChangeSupport(this);
     private boolean changed;
 
@@ -78,9 +78,9 @@ public final class dbConnectionSettingsOptionsPanelController extends OptionsPan
         pcs.removePropertyChangeListener(l);
     }
 
-    private dbConnectionSettingsPanel getPanel() {
+    private serialPortSettingsPanel getPanel() {
         if (panel == null) {
-            panel = new dbConnectionSettingsPanel(this);
+            panel = new serialPortSettingsPanel(this);
         }
         return panel;
     }

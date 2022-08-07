@@ -13,7 +13,7 @@ public final class dbConnectionSettingsPanel extends javax.swing.JPanel {
     private EntityManagerFactory managerFactory = null;
     private EntityManager manager = null;
     private boolean changed;    
-    
+        
     dbConnectionSettingsPanel(dbConnectionSettingsOptionsPanelController controller) {
         this.controller = controller;
         initComponents();        
