@@ -50,7 +50,7 @@ public int bytesAvailable;
         workingPort.setParity(parity);
         this.dataLength = dLength;   
         //workingPort.closePort();
-        //workingPort.openPort();
+        //opened = workingPort.openPort();
         //workingPort.flushIOBuffers();
     }
 
@@ -90,15 +90,21 @@ public int bytesAvailable;
                         S = new String(readBuffer, "UTF-8"); //convert bytes to String
                         S = S.trim();
                         setSerialMessage("-->" + S);
-                        S = S.substring(4);
-                        setValue(Integer.parseInt(S));
+                        if (S.startsWith("R01W")){
+                            S = S.substring(4);
+                            int newSeq = S.indexOf("R");
+                            if (newSeq!=-1){
+                                S = S.substring(0, newSeq);
+                            }
+                            setValue(Integer.parseInt(S));
+                        }                                                                        
                         
                     } catch (UnsupportedEncodingException ex) {
                         setSerialMessage(ex.getLocalizedMessage());
                     }
                 }
                 try {
-                    Thread.sleep(2000);
+                    Thread.sleep(1000);
                 } catch (InterruptedException ex) {
                     Exceptions.printStackTrace(ex);
                 }

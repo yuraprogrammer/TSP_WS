@@ -1,8 +1,10 @@
 package com.alexprom.tsp_ws.weighting;
 
 import com.fazecast.jSerialComm.SerialPort;
+import java.util.ArrayList;
 import org.openide.util.Exceptions;
 import org.openide.util.NbPreferences;
+import org.openide.windows.WindowManager;
 
 final class serialPortSettingsPanel extends javax.swing.JPanel implements Runnable{
 
@@ -13,8 +15,9 @@ final class serialPortSettingsPanel extends javax.swing.JPanel implements Runnab
     private portReader port;
     private Thread thread;
     private Thread portThread;
-    private int stepsCount=5, curStep;
     private boolean stopTest = true;
+    private weightingAdditionalTopComponent adp;
+    
     
     serialPortSettingsPanel(serialPortSettingsOptionsPanelController controller) {
         this.portSpeed = new String[]{"9600", "19200", "47500", "56000"};
@@ -296,40 +299,45 @@ final class serialPortSettingsPanel extends javax.swing.JPanel implements Runnab
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnExchangeTestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExchangeTestActionPerformed
-        int testPort = cbSerialPortSelector.getSelectedIndex();
-        int BaudRate = Integer.parseInt(cbSpeedSelector.getSelectedItem().toString());
-        int DataBits = ((Integer)cntBitsCount.getValue());
-        int StopBits = cbStopBitsCount.getSelectedIndex();
-        int Parity = cbParitySelector.getSelectedIndex()+1;
-        int dLength = Integer.parseInt(tfMessageLength.getText());
-        //testPort.setComPortTimeouts(SerialPort.TIMEOUT_READ_BLOCKING, Integer.parseInt(tfTimeout.getText()), 0);
-        port = new portReader(testPort, dLength, BaudRate, DataBits, StopBits, Parity);
+        adp = (weightingAdditionalTopComponent)WindowManager.getDefault().findTopComponent("weightingAdditionalTopComponent");
         taSerialDataOutput.setText("");
-        curStep=0;
-        port.closePort();
-        port.openPort();
-        port.flush();
-        btnExchangeTest.setEnabled(false);
-        btnStopTest.setEnabled(true);
-        portThread = new Thread(port);
-        portThread.setPriority(Thread.MIN_PRIORITY);
-        portThread.start();
         thread = new Thread(this);
         thread.setPriority(Thread.MIN_PRIORITY);
         thread.start();
         stopTest = false;    
-        
+        enableControls(false);
     }//GEN-LAST:event_btnExchangeTestActionPerformed
 
-    private void btnStopTestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStopTestActionPerformed
+    private void enableControls(boolean enable){
+        btnExchangeTest.setEnabled(enable);
+        btnStopTest.setEnabled(!enable);
+        cbSerialPortSelector.setEnabled(enable);
+        cbSpeedSelector.setEnabled(enable);
+        cntBitsCount.setEnabled(enable);
+        cbStopBitsCount.setEnabled(enable);
+        tfTimeout.setEnabled(enable);
+        cbParitySelector.setEnabled(enable);
+        tfMessageLength.setEnabled(enable);
+    }
+    
+    void stopTestCycle(){
         stopTest = true;                
-        btnStopTest.setEnabled(false);
-        btnExchangeTest.setEnabled(true);
+        enableControls(true);
+    }
+    
+    private void btnStopTestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStopTestActionPerformed
+        stopTestCycle();
     }//GEN-LAST:event_btnStopTestActionPerformed
 
     void load() {
         cbSerialPortSelector.setSelectedIndex(NbPreferences.forModule(serialPortSettingsPanel.class).getInt("SerialPort", 0));
-        cbSpeedSelector.setSelectedIndex(NbPreferences.forModule(serialPortSettingsPanel.class).getInt("Baud rate", 0));
+        String speedValue = String.valueOf(NbPreferences.forModule(serialPortSettingsPanel.class).getInt("Baud rate", 0));
+        for (int i=0; i<this.portSpeed.length; i++){
+            if (this.portSpeed[i].equals(speedValue)){
+                cbSpeedSelector.setSelectedIndex(i);
+            }
+        }
+                        
         cbParitySelector.setSelectedIndex(NbPreferences.forModule(serialPortSettingsPanel.class).getInt("Parity", 0));
         cbStopBitsCount.setSelectedIndex(NbPreferences.forModule(serialPortSettingsPanel.class).getInt("StopBits", 0));
         cntBitsCount.setValue(NbPreferences.forModule(serialPortSettingsPanel.class).getInt("DataBits", 8));
@@ -339,7 +347,7 @@ final class serialPortSettingsPanel extends javax.swing.JPanel implements Runnab
 
     void store() {
         NbPreferences.forModule(serialPortSettingsPanel.class).putInt("SerialPort", cbSerialPortSelector.getSelectedIndex());
-        NbPreferences.forModule(serialPortSettingsPanel.class).putInt("Baud rate", cbSpeedSelector.getSelectedIndex());
+        NbPreferences.forModule(serialPortSettingsPanel.class).putInt("Baud rate", Integer.parseInt(portSpeed[cbSpeedSelector.getSelectedIndex()]));
         NbPreferences.forModule(serialPortSettingsPanel.class).putInt("Parity", cbParitySelector.getSelectedIndex());
         NbPreferences.forModule(serialPortSettingsPanel.class).putInt("StopBits", cbStopBitsCount.getSelectedIndex());
         NbPreferences.forModule(serialPortSettingsPanel.class).putInt("DataBits", ((Integer)cntBitsCount.getValue()));
@@ -386,22 +394,17 @@ final class serialPortSettingsPanel extends javax.swing.JPanel implements Runnab
         while(true){
         synchronized(this){
             while(!stopTest){
-                if (port!=null){
-                    if (port.bytesAvailable>0){
-                        taSerialDataOutput.append(port.getSerialMessage()+"\n");
-                        
-                    }
+                if (adp!=null){
+                    taSerialDataOutput.append(adp.getRcvMessage()+"\n");
                 }
                 try {
                     Thread.sleep(2000);
                 } catch (InterruptedException ex) {
                     Exceptions.printStackTrace(ex);
                 }
-                curStep++;
+                
             }
-            port.closePort();
-            btnExchangeTest.setEnabled(true);
-            btnStopTest.setEnabled(false);    
+            enableControls(true);  
         }}
     }
 }

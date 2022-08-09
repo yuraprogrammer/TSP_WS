@@ -41,11 +41,12 @@ public final class serialPortSettingsOptionsPanelController extends OptionsPanel
                 changed = false;
             }
         });
+        getPanel().stopTestCycle();
     }
 
     @Override
     public void cancel() {
-        // need not do anything special, if no changes have been persisted yet
+        getPanel().stopTestCycle();
     }
 
     @Override
