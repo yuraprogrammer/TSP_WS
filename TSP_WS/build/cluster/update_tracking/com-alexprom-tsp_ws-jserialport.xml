@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="com.alexprom.tsp_ws.jserialport">
+    <module_version install_time="1661355651910" last="true" origin="installer" specification_version="1.0">
+        <file crc="1569464110" name="config/Modules/com-alexprom-tsp_ws-jserialport.xml"/>
+        <file crc="4032260094" name="modules/com-alexprom-tsp_ws-jserialport.jar"/>
+        <file crc="2605656936" name="modules/ext/jSerialComm-2.9.2.jar"/>
+    </module_version>
+</module>

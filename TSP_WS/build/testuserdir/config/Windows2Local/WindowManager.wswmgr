@@ -3,10 +3,10 @@
 <windowmanager version="2.1">
     <main-window>
   <joined-properties
-   x="80"
-   y="63"
-   width="1440"
-   height="774"
+   x="-8"
+   y="-8"
+   width="1616"
+   height="876"
    relative-x="0.0"
    relative-y="0.0"
    relative-width="0.0"
@@ -33,9 +33,9 @@
   </main-window>
     <editor-area state="joined" frame-state="0">
   <constraints>
-  <path orientation="horizontal" number="60" weight="0.7" />
-  <path orientation="vertical" number="40" weight="0.7742363877822045" />
-  <path orientation="horizontal" number="40" weight="0.9311704606560315" />
+  <path orientation="horizontal" number="60" weight="0.8406524466750314" />
+  <path orientation="vertical" number="40" weight="0.7343957503320053" />
+  <path orientation="horizontal" number="40" weight="0.7664179104477612" />
   <path orientation="vertical" number="40" weight="0.5" />
   </constraints>
   <bounds x="528" y="206" width="672" height="378" />
@@ -44,9 +44,10 @@
     <active-mode name="editor"/>
     <toolbar configuration="Standard" preferred-icon-size="24"/>
     <tc-list>
-  <tc-id id="weightingVisTopComponent"/>
-  <tc-id id="MainOutputTopComponent"/>
-  <tc-id id="MainTreeTopComponent"/>
-  <tc-id id="MainPropertiesTopComponent"/>
+  <tc-id id="weightingFormTopComponent"/>
+  <tc-id id="weightingAdditionalTopComponent"/>
+  <tc-id id="output"/>
+  <tc-id id="appTreeTopComponent"/>
+  <tc-id id="properties"/>
     </tc-list>
 </windowmanager>

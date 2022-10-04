@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE attributes PUBLIC "-//NetBeans//DTD DefaultAttributes 1.0//EN" "http://www.netbeans.org/dtds/attributes-1_0.dtd">
 <attributes version="1.0">
+    <fileobject name="bottomSlidingSide">
+        <attr name="WinSys-TCRef-Order" stringvalue="wightingLoggerTopComponent"/>
+    </fileobject>
     <fileobject name="editor">
-        <attr name="WinSys-TCRef-Order" stringvalue="weightingVisTopComponent"/>
+        <attr name="WinSys-TCRef-Order" stringvalue="weightingFormTopComponent"/>
     </fileobject>
     <fileobject name="explorer">
-        <attr name="WinSys-TCRef-Order" stringvalue="MainTreeTopComponent"/>
+        <attr name="WinSys-TCRef-Order" stringvalue="appTreeTopComponent"/>
     </fileobject>
     <fileobject name="output">
-        <attr name="WinSys-TCRef-Order" stringvalue="MainOutputTopComponent/output"/>
+        <attr name="WinSys-TCRef-Order" stringvalue="output/weightingAdditionalTopComponent"/>
     </fileobject>
     <fileobject name="properties">
-        <attr name="WinSys-TCRef-Order" stringvalue="MainPropertiesTopComponent/properties"/>
+        <attr name="WinSys-TCRef-Order" stringvalue="properties"/>
     </fileobject>
 </attributes>

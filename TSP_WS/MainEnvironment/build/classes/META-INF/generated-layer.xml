@@ -3,20 +3,10 @@
     <folder name="xml">
         <folder name="entities">
             <folder name="com_alexprom_tsp_ws_env">
-                <file name="MainProperties" url="nbres:/org/netbeans/modules/settings/resources/properties-1_0.dtd">
-                    <!--com.alexprom.tsp_ws.env.MainPropertiesTopComponent-->
+                <file name="appTree" url="nbres:/org/netbeans/modules/settings/resources/properties-1_0.dtd">
+                    <!--com.alexprom.tsp_ws.env.appTreeTopComponent-->
                     
-                <attr name="hint.originalPublicID" stringvalue="-//com.alexprom.tsp_ws.env//MainProperties//EN"/>
-                </file>
-                <file name="MainTree" url="nbres:/org/netbeans/modules/settings/resources/properties-1_0.dtd">
-                    <!--com.alexprom.tsp_ws.env.MainTreeTopComponent-->
-                    
-                <attr name="hint.originalPublicID" stringvalue="-//com.alexprom.tsp_ws.env//MainTree//EN"/>
-                </file>
-            <file name="MainOutput" url="nbres:/org/netbeans/modules/settings/resources/properties-1_0.dtd">
-                    <!--com.alexprom.tsp_ws.env.MainOutputTopComponent-->
-                    
-                <attr name="hint.originalPublicID" stringvalue="-//com.alexprom.tsp_ws.env//MainOutput//EN"/>
+                <attr name="hint.originalPublicID" stringvalue="-//com.alexprom.tsp_ws.env//appTree//EN"/>
                 </file>
             </folder>
         </folder>
@@ -25,20 +15,10 @@
                 <folder name="alexprom">
                     <folder name="tsp_ws">
                         <folder name="env">
-                            <file name="MainPropertiesTopComponent">
-                                <!--com.alexprom.tsp_ws.env.MainPropertiesTopComponent-->
+                            <file name="appTreeTopComponent">
+                                <!--com.alexprom.tsp_ws.env.appTreeTopComponent-->
                                 
-                            <attr name="settings.providerPath" stringvalue="xml/lookups//com_alexprom_tsp_ws_env/MainProperties.instance"/>
-                            </file>
-                            <file name="MainTreeTopComponent">
-                                <!--com.alexprom.tsp_ws.env.MainTreeTopComponent-->
-                                
-                            <attr name="settings.providerPath" stringvalue="xml/lookups//com_alexprom_tsp_ws_env/MainTree.instance"/>
-                            </file>
-                        <file name="MainOutputTopComponent">
-                                <!--com.alexprom.tsp_ws.env.MainOutputTopComponent-->
-                                
-                            <attr name="settings.providerPath" stringvalue="xml/lookups//com_alexprom_tsp_ws_env/MainOutput.instance"/>
+                            <attr name="settings.providerPath" stringvalue="xml/lookups//com_alexprom_tsp_ws_env/appTree.instance"/>
                             </file>
                         </folder>
                     </folder>
@@ -47,8 +27,8 @@
         </folder>
         <folder name="lookups">
             <folder name="com_alexprom_tsp_ws_env">
-                <file name="MainProperties.instance">
-                    <!--com.alexprom.tsp_ws.env.MainPropertiesTopComponent-->
+                <file name="appTree.instance">
+                    <!--com.alexprom.tsp_ws.env.appTreeTopComponent-->
                     
                     
                     
@@ -56,34 +36,8 @@
                     
                 <attr methodvalue="org.netbeans.api.settings.Factory.create" name="instanceCreate"/>
                     <attr methodvalue="org.netbeans.api.settings.Factory.properties" name="settings.convertor"/>
-                    <attr name="settings.instanceClass" stringvalue="com.alexprom.tsp_ws.env.MainPropertiesTopComponent"/>
-                    <attr name="settings.instanceOf" stringvalue="com.alexprom.tsp_ws.env.MainPropertiesTopComponent"/>
-                    <attr boolvalue="true" name="xmlproperties.preventStoring"/>
-                </file>
-                <file name="MainTree.instance">
-                    <!--com.alexprom.tsp_ws.env.MainTreeTopComponent-->
-                    
-                    
-                    
-                    
-                    
-                <attr methodvalue="org.netbeans.api.settings.Factory.create" name="instanceCreate"/>
-                    <attr methodvalue="org.netbeans.api.settings.Factory.properties" name="settings.convertor"/>
-                    <attr name="settings.instanceClass" stringvalue="com.alexprom.tsp_ws.env.MainTreeTopComponent"/>
-                    <attr name="settings.instanceOf" stringvalue="com.alexprom.tsp_ws.env.MainTreeTopComponent"/>
-                    <attr boolvalue="true" name="xmlproperties.preventStoring"/>
-                </file>
-            <file name="MainOutput.instance">
-                    <!--com.alexprom.tsp_ws.env.MainOutputTopComponent-->
-                    
-                    
-                    
-                    
-                    
-                <attr methodvalue="org.netbeans.api.settings.Factory.create" name="instanceCreate"/>
-                    <attr methodvalue="org.netbeans.api.settings.Factory.properties" name="settings.convertor"/>
-                    <attr name="settings.instanceClass" stringvalue="com.alexprom.tsp_ws.env.MainOutputTopComponent"/>
-                    <attr name="settings.instanceOf" stringvalue="com.alexprom.tsp_ws.env.MainOutputTopComponent"/>
+                    <attr name="settings.instanceClass" stringvalue="com.alexprom.tsp_ws.env.appTreeTopComponent"/>
+                    <attr name="settings.instanceOf" stringvalue="com.alexprom.tsp_ws.env.appTreeTopComponent"/>
                     <attr boolvalue="true" name="xmlproperties.preventStoring"/>
                 </file>
             </folder>
@@ -91,74 +45,30 @@
     </folder>
     <folder name="Menu">
         <folder name="Window">
-            <file name="com-alexprom-tsp_ws-env-MainPropertiesTopComponent.shadow">
-                <!--com.alexprom.tsp_ws.env.MainPropertiesTopComponent-->
+            <file name="com-alexprom-tsp_ws-env-appTreeTopComponent.shadow">
+                <!--com.alexprom.tsp_ws.env.appTreeTopComponent-->
                 
-            <attr name="originalFile" stringvalue="Actions/Window/com-alexprom-tsp_ws-env-MainPropertiesTopComponent.instance"/>
-            </file>
-            <file name="com-alexprom-tsp_ws-env-MainTreeTopComponent.shadow">
-                <!--com.alexprom.tsp_ws.env.MainTreeTopComponent-->
-                
-            <attr name="originalFile" stringvalue="Actions/Window/com-alexprom-tsp_ws-env-MainTreeTopComponent.instance"/>
-            </file>
-        <file name="com-alexprom-tsp_ws-env-MainOutputTopComponent.shadow">
-                <!--com.alexprom.tsp_ws.env.MainOutputTopComponent-->
-                
-            <attr name="originalFile" stringvalue="Actions/Window/com-alexprom-tsp_ws-env-MainOutputTopComponent.instance"/>
+            <attr name="originalFile" stringvalue="Actions/Window/com-alexprom-tsp_ws-env-appTreeTopComponent.instance"/>
             </file>
         </folder>
     </folder>
     <folder name="Windows2">
         <folder name="Components">
-            <file name="MainPropertiesTopComponent.settings">
-                <!--com.alexprom.tsp_ws.env.MainPropertiesTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+            <file name="appTreeTopComponent.settings">
+                <!--com.alexprom.tsp_ws.env.appTreeTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE settings PUBLIC "-//NetBeans//DTD Session settings 1.0//EN" "http://www.netbeans.org/dtds/sessionsettings-1_0.dtd">
 <settings version="1.0">
-  <instance class="com.alexprom.tsp_ws.env.MainPropertiesTopComponent"/>
-</settings>
-]]></file>
-            <file name="MainTreeTopComponent.settings">
-                <!--com.alexprom.tsp_ws.env.MainTreeTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE settings PUBLIC "-//NetBeans//DTD Session settings 1.0//EN" "http://www.netbeans.org/dtds/sessionsettings-1_0.dtd">
-<settings version="1.0">
-  <instance class="com.alexprom.tsp_ws.env.MainTreeTopComponent"/>
-</settings>
-]]></file>
-        <file name="MainOutputTopComponent.settings">
-                <!--com.alexprom.tsp_ws.env.MainOutputTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE settings PUBLIC "-//NetBeans//DTD Session settings 1.0//EN" "http://www.netbeans.org/dtds/sessionsettings-1_0.dtd">
-<settings version="1.0">
-  <instance class="com.alexprom.tsp_ws.env.MainOutputTopComponent"/>
+  <instance class="com.alexprom.tsp_ws.env.appTreeTopComponent"/>
 </settings>
 ]]></file>
         </folder>
         <folder name="Modes">
-            <folder name="properties">
-                <file name="MainPropertiesTopComponent.wstcref">
-                    <!--com.alexprom.tsp_ws.env.MainPropertiesTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE tc-ref PUBLIC "-//NetBeans//DTD Top Component in Mode Properties 2.0//EN" "http://www.netbeans.org/dtds/tc-ref2_0.dtd">
-<tc-ref version="2.0">
-  <tc-id id="MainPropertiesTopComponent"/>
-  <state opened="true"/>
-</tc-ref>
-]]></file>
-            </folder>
             <folder name="explorer">
-                <file name="MainTreeTopComponent.wstcref">
-                    <!--com.alexprom.tsp_ws.env.MainTreeTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+                <file name="appTreeTopComponent.wstcref">
+                    <!--com.alexprom.tsp_ws.env.appTreeTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tc-ref PUBLIC "-//NetBeans//DTD Top Component in Mode Properties 2.0//EN" "http://www.netbeans.org/dtds/tc-ref2_0.dtd">
 <tc-ref version="2.0">
-  <tc-id id="MainTreeTopComponent"/>
-  <state opened="true"/>
-</tc-ref>
-]]></file>
-            </folder>
-        <folder name="output">
-                <file name="MainOutputTopComponent.wstcref">
-                    <!--com.alexprom.tsp_ws.env.MainOutputTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE tc-ref PUBLIC "-//NetBeans//DTD Top Component in Mode Properties 2.0//EN" "http://www.netbeans.org/dtds/tc-ref2_0.dtd">
-<tc-ref version="2.0">
-  <tc-id id="MainOutputTopComponent"/>
+  <tc-id id="appTreeTopComponent"/>
   <state opened="true"/>
 </tc-ref>
 ]]></file>
@@ -167,38 +77,16 @@
     </folder>
     <folder name="Actions">
         <folder name="Window">
-            <file name="com-alexprom-tsp_ws-env-MainPropertiesTopComponent.instance">
-                <!--com.alexprom.tsp_ws.env.MainPropertiesTopComponent-->
+            <file name="com-alexprom-tsp_ws-env-appTreeTopComponent.instance">
+                <!--com.alexprom.tsp_ws.env.appTreeTopComponent-->
                 
                 
                 
                 
             <attr methodvalue="org.openide.windows.TopComponent.openAction" name="instanceCreate"/>
-                <attr name="component" newvalue="com.alexprom.tsp_ws.env.MainPropertiesTopComponent"/>
-                <attr name="preferredID" stringvalue="MainPropertiesTopComponent"/>
-                <attr bundlevalue="com.alexprom.tsp_ws.env.Bundle#CTL_MainPropertiesAction" name="displayName"/>
-            </file>
-            <file name="com-alexprom-tsp_ws-env-MainTreeTopComponent.instance">
-                <!--com.alexprom.tsp_ws.env.MainTreeTopComponent-->
-                
-                
-                
-                
-            <attr methodvalue="org.openide.windows.TopComponent.openAction" name="instanceCreate"/>
-                <attr name="component" newvalue="com.alexprom.tsp_ws.env.MainTreeTopComponent"/>
-                <attr name="preferredID" stringvalue="MainTreeTopComponent"/>
-                <attr bundlevalue="com.alexprom.tsp_ws.env.Bundle#CTL_MainTreeAction" name="displayName"/>
-            </file>
-        <file name="com-alexprom-tsp_ws-env-MainOutputTopComponent.instance">
-                <!--com.alexprom.tsp_ws.env.MainOutputTopComponent-->
-                
-                
-                
-                
-            <attr methodvalue="org.openide.windows.TopComponent.openAction" name="instanceCreate"/>
-                <attr name="component" newvalue="com.alexprom.tsp_ws.env.MainOutputTopComponent"/>
-                <attr name="preferredID" stringvalue="MainOutputTopComponent"/>
-                <attr bundlevalue="com.alexprom.tsp_ws.env.Bundle#CTL_MainOutputAction" name="displayName"/>
+                <attr name="component" newvalue="com.alexprom.tsp_ws.env.appTreeTopComponent"/>
+                <attr name="preferredID" stringvalue="appTreeTopComponent"/>
+                <attr bundlevalue="com.alexprom.tsp_ws.env.Bundle#CTL_appTreeAction" name="displayName"/>
             </file>
         </folder>
     </folder>

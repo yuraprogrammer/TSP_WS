@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="com.alexprom.tsp_ws">
+    <module_version install_time="1664199018506" last="true" origin="installer" specification_version="1.0">
+        <file crc="4018685467" name="config/Modules/com-alexprom-tsp_ws.xml"/>
+        <file crc="2753699371" name="modules/com-alexprom-tsp_ws.jar"/>
+        <file crc="1674330007" name="modules/ext/AsutpDB.jar"/>
+    </module_version>
+</module>
