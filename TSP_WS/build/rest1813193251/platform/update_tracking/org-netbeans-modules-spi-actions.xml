@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="org.netbeans.modules.spi.actions/1">
+    <module_version install_time="1445548925363" last="true" origin="installer" specification_version="1.27.1">
+        <file crc="1336977091" name="config/Modules/org-netbeans-modules-spi-actions.xml"/>
+        <file crc="48202502" name="modules/locale/org-netbeans-modules-spi-actions_ja.jar"/>
+        <file crc="2739453037" name="modules/locale/org-netbeans-modules-spi-actions_pt_BR.jar"/>
+        <file crc="3264789726" name="modules/locale/org-netbeans-modules-spi-actions_ru.jar"/>
+        <file crc="456084487" name="modules/locale/org-netbeans-modules-spi-actions_zh_CN.jar"/>
+        <file crc="1435280584" name="modules/org-netbeans-modules-spi-actions.jar"/>
+    </module_version>
+</module>

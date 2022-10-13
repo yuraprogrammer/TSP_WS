@@ -1,54 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN" "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
 <filesystem>
-    <folder name="xml">
-        <folder name="entities">
-            <folder name="com_alexprom_tsp_ws_env">
-                <file name="appTree" url="nbres:/org/netbeans/modules/settings/resources/properties-1_0.dtd">
-                    <!--com.alexprom.tsp_ws.env.appTreeTopComponent-->
-                    
-                <attr name="hint.originalPublicID" stringvalue="-//com.alexprom.tsp_ws.env//appTree//EN"/>
-                </file>
-            </folder>
-        </folder>
-        <folder name="memory">
-            <folder name="com">
-                <folder name="alexprom">
-                    <folder name="tsp_ws">
-                        <folder name="env">
-                            <file name="appTreeTopComponent">
-                                <!--com.alexprom.tsp_ws.env.appTreeTopComponent-->
-                                
-                            <attr name="settings.providerPath" stringvalue="xml/lookups//com_alexprom_tsp_ws_env/appTree.instance"/>
-                            </file>
-                        </folder>
-                    </folder>
-                </folder>
-            </folder>
-        </folder>
-        <folder name="lookups">
-            <folder name="com_alexprom_tsp_ws_env">
-                <file name="appTree.instance">
-                    <!--com.alexprom.tsp_ws.env.appTreeTopComponent-->
-                    
-                    
-                    
-                    
-                    
-                <attr methodvalue="org.netbeans.api.settings.Factory.create" name="instanceCreate"/>
-                    <attr methodvalue="org.netbeans.api.settings.Factory.properties" name="settings.convertor"/>
-                    <attr name="settings.instanceClass" stringvalue="com.alexprom.tsp_ws.env.appTreeTopComponent"/>
-                    <attr name="settings.instanceOf" stringvalue="com.alexprom.tsp_ws.env.appTreeTopComponent"/>
-                    <attr boolvalue="true" name="xmlproperties.preventStoring"/>
-                </file>
-            </folder>
-        </folder>
-    </folder>
     <folder name="Menu">
         <folder name="Window">
             <file name="com-alexprom-tsp_ws-env-appTreeTopComponent.shadow">
                 <!--com.alexprom.tsp_ws.env.appTreeTopComponent-->
-                
-            <attr name="originalFile" stringvalue="Actions/Window/com-alexprom-tsp_ws-env-appTreeTopComponent.instance"/>
+                <attr name="originalFile" stringvalue="Actions/Window/com-alexprom-tsp_ws-env-appTreeTopComponent.instance"/>
             </file>
         </folder>
     </folder>
@@ -79,15 +35,47 @@
         <folder name="Window">
             <file name="com-alexprom-tsp_ws-env-appTreeTopComponent.instance">
                 <!--com.alexprom.tsp_ws.env.appTreeTopComponent-->
-                
-                
-                
-                
-            <attr methodvalue="org.openide.windows.TopComponent.openAction" name="instanceCreate"/>
+                <attr methodvalue="org.openide.windows.TopComponent.openAction" name="instanceCreate"/>
                 <attr name="component" newvalue="com.alexprom.tsp_ws.env.appTreeTopComponent"/>
                 <attr name="preferredID" stringvalue="appTreeTopComponent"/>
                 <attr bundlevalue="com.alexprom.tsp_ws.env.Bundle#CTL_appTreeAction" name="displayName"/>
             </file>
+        </folder>
+    </folder>
+    <folder name="xml">
+        <folder name="entities">
+            <folder name="com_alexprom_tsp_ws_env">
+                <file name="appTree" url="nbres:/org/netbeans/modules/settings/resources/properties-1_0.dtd">
+                    <!--com.alexprom.tsp_ws.env.appTreeTopComponent-->
+                    <attr name="hint.originalPublicID" stringvalue="-//com.alexprom.tsp_ws.env//appTree//EN"/>
+                </file>
+            </folder>
+        </folder>
+        <folder name="memory">
+            <folder name="com">
+                <folder name="alexprom">
+                    <folder name="tsp_ws">
+                        <folder name="env">
+                            <file name="appTreeTopComponent">
+                                <!--com.alexprom.tsp_ws.env.appTreeTopComponent-->
+                                <attr name="settings.providerPath" stringvalue="xml/lookups//com_alexprom_tsp_ws_env/appTree.instance"/>
+                            </file>
+                        </folder>
+                    </folder>
+                </folder>
+            </folder>
+        </folder>
+        <folder name="lookups">
+            <folder name="com_alexprom_tsp_ws_env">
+                <file name="appTree.instance">
+                    <!--com.alexprom.tsp_ws.env.appTreeTopComponent-->
+                    <attr methodvalue="org.netbeans.api.settings.Factory.create" name="instanceCreate"/>
+                    <attr methodvalue="org.netbeans.api.settings.Factory.properties" name="settings.convertor"/>
+                    <attr name="settings.instanceClass" stringvalue="com.alexprom.tsp_ws.env.appTreeTopComponent"/>
+                    <attr name="settings.instanceOf" stringvalue="com.alexprom.tsp_ws.env.appTreeTopComponent"/>
+                    <attr boolvalue="true" name="xmlproperties.preventStoring"/>
+                </file>
+            </folder>
         </folder>
     </folder>
 </filesystem>

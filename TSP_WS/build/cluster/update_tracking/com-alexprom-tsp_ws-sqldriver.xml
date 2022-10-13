@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><module codename="com.alexprom.tsp_ws.sqldriver">
-    <module_version install_time="1661355652244" last="true" origin="installer" specification_version="1.0">
+    <module_version install_time="1665040012514" last="true" origin="installer" specification_version="1.0">
         <file crc="300626805" name="config/Modules/com-alexprom-tsp_ws-sqldriver.xml"/>
         <file crc="3340951816" name="modules/com-alexprom-tsp_ws-sqldriver.jar"/>
         <file crc="1069988878" name="modules/ext/mssql-jdbc-9.2.1.jre8.jar"/>

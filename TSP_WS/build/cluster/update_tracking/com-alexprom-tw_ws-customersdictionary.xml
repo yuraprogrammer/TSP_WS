@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><module codename="com.alexprom.tw_ws.customersdictionary">
-    <module_version install_time="1661355653738" last="true" origin="installer" specification_version="1.0">
+    <module_version install_time="1665040023074" last="true" origin="installer" specification_version="1.0">
         <file crc="4045402001" name="config/Modules/com-alexprom-tw_ws-customersdictionary.xml"/>
         <file crc="2924833147" name="modules/com-alexprom-tw_ws-customersdictionary.jar"/>
     </module_version>

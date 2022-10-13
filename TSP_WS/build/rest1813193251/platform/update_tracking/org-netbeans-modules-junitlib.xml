@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="org.netbeans.modules.junitlib">
+    <module_version install_time="1445548557467" last="true" origin="installer" specification_version="1.3.1">
+        <file crc="736645064" name="config/Modules/org-netbeans-modules-junitlib.xml"/>
+        <file crc="3107683478" name="docs/junit-4.12-javadoc.jar"/>
+        <file crc="2691397751" name="docs/junit-4.12-sources.jar"/>
+        <file crc="3395599908" name="modules/locale/org-netbeans-modules-junitlib_ja.jar"/>
+        <file crc="3842502164" name="modules/locale/org-netbeans-modules-junitlib_pt_BR.jar"/>
+        <file crc="1992124512" name="modules/locale/org-netbeans-modules-junitlib_ru.jar"/>
+        <file crc="1461849123" name="modules/locale/org-netbeans-modules-junitlib_zh_CN.jar"/>
+        <file crc="3506914821" name="modules/org-netbeans-modules-junitlib.jar"/>
+    </module_version>
+</module>

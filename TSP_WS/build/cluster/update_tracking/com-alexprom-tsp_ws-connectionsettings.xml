@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><module codename="com.alexprom.tsp_ws.connectionsettings">
-    <module_version install_time="1662621870871" last="true" origin="installer" specification_version="1.0">
+    <module_version install_time="1665040018460" last="true" origin="installer" specification_version="1.0">
         <file crc="2184922441" name="config/Modules/com-alexprom-tsp_ws-connectionsettings.xml"/>
-        <file crc="3270677121" name="modules/com-alexprom-tsp_ws-connectionsettings.jar"/>
+        <file crc="398950436" name="modules/com-alexprom-tsp_ws-connectionsettings.jar"/>
     </module_version>
 </module>
